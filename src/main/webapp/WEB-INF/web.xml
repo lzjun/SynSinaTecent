@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.4" 
+	xmlns="http://java.sun.com/xml/ns/j2ee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee 
+	http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.lzjun.weibo.tecent.Login</servlet-class>
+  </servlet>
+ 
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/Login</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>Access</servlet-name>
+    <servlet-class>com.lzjun.weibo.tecent.Access</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>TecentWeibo</servlet-name>
+    <servlet-class>com.lzjun.weibo.tecent.TecentWeibo</servlet-class>
+  </servlet>
+
+
+  
+  <servlet-mapping>
+    <servlet-name>Access</servlet-name>
+    <url-pattern>/access</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>TecentWeibo</servlet-name>
+    <url-pattern>/TecentWeibo</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
